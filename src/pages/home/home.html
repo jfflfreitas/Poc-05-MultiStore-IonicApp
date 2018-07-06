@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Perfíl de Usuário
+    </ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <img src="{{ imgUrl }}" alt="{{ displayName }}" />
+    <ion-card-content>
+      <ion-card-title>
+        Bem Vindo {{ displayName}}
+      </ion-card-title>
+      <p>Esse é um app exemplo da CapgeminiBrasil</p>
+    </ion-card-content>
+  </ion-card>
+
+  <button ion-button block color="primary" (tap)="signOut()">
+    Sair
+  </button>
+
+</ion-content>

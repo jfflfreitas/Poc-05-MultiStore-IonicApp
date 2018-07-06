@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "42503403872",
+    "firebase_url": "https://capgeministore.firebaseio.com",
+    "project_id": "capgeministore",
+    "storage_bucket": "capgeministore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42503403872:android:d540d4efa8bba829",
+        "android_client_info": {
+          "package_name": "br.capgeminibrasil.capgeministore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42503403872-gucqq2qilv2as6ao285jmte9am7knmn5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.capgeminibrasil.capgeministore",
+            "certificate_hash": "3097fc3982315049a6831fbec61969291a9a256d"
+          }
+        },
+        {
+          "client_id": "42503403872-en69bl1vghla4r3s9ldb055i29u5ah47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAynSx7RToVcLGzneCFt7Pm2bh4h3MyIas"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42503403872-en69bl1vghla4r3s9ldb055i29u5ah47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

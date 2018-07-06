@@ -1,0 +1,8 @@
+{
+  "name": "CapgeminiStore",
+  "app_id": "a0137fb1",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

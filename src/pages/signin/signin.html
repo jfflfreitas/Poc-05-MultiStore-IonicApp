@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <button ion-button block color="light" (tap)="createAccount()">
+    Criar conta
+  </button>
+
+  <p text-center>Ou</p>
+
+  <button ion-button block (tap)="signInWithEmailPage()">
+    Entrar com e-mail e senha
+  </button>
+
+  <button ion-button block icon-left color="danger" margin-top (tap)="signInWithGoogle()">
+    <ion-icon name="logo-google"></ion-icon>
+    Entrar com o Google
+  </button>
+
+  <button ion-button block icon-left color="facebook" margin-top (tap)="signInWithFacebook()">
+    <ion-icon name="logo-facebook"></ion-icon>
+    Entrar com o Facebook
+  </button>
+
+  <button ion-button block icon-left color="twitter" margin-top (tap)="signInWithTwitter()">
+    <ion-icon name="logo-twitter"></ion-icon>
+    Entrar com o Twitter
+  </button>
+
+</ion-content>

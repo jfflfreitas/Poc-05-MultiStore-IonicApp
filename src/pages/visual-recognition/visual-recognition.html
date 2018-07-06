@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Reconhecimento Visual
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button full (click)="getImage()">Upload Image</button>
+  <ion-card>
+    <img [hidden]="!base64Image" [src]="base64Image" />
+  </ion-card>
+<ion-card>
+  <ion-card-header>Reconhecimento de Facial</ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item>
+        <div id="regeStr" padding [innerHTML]="regularString"></div>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+  <ion-fab bottom right>
+    <button ion-fab (click)="takePhoto()">
+      <ion-icon name="camera"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-content>

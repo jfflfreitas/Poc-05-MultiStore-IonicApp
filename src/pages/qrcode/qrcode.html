@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      QrCode
+    </ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <!-- <ion-input type="text" placeholder="Informação para QrCode" [(ngModel)]="qrData">
+    </ion-input> -->
+  </ion-item>
+  <!-- <button ion-button full icon-left (tap)="createCode()">
+    <ion-icon name="barcode"></ion-icon>Criar QrCode</button> -->
+  <button ion-button full icon-left (tap)="scanCode()" color="secondary">
+    <ion-icon name="qr-scanner"></ion-icon>Ler QrCode</button>
+
+    
+
+  <ion-card *ngIf="createdCode">
+    <ngx-qrcode [qrc-value]="createdCode"></ngx-qrcode>
+    <ion-card-content>
+      <p>Value: {{ createdCode }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="scannedCode">
+    <ion-card-content>
+      Resultado do QrCode : {{ scannedCode }}
+      <button ion-button block clear (tap)="openWebpage(scannedCode)">Abrir Página</button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
